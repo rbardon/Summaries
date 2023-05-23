@@ -15,20 +15,31 @@
         .text-container {
             text-align: justify;
         }
+        .hide-button {
+            background-color: #eee;
+            border: none;
+            color: #000;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .hidden-section {
+            display: none;
+        }
     </style>
+    <script>
+        function toggleSection() {
+            var section = document.getElementById('section-to-toggle');
+            section.classList.toggle('hidden-section');
+        }
+    </script>
 </head>
 <body>
     <div>
         <p class="title-text">20230522_LD_These 8 Altcoins Just Flipped The Crypto Market.json</p>
         <h3 class="subtitle-text">22/05/2023 - Channel Name</h3>
-        <div class="text-container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus urna a pretium tincidunt. Fusce scelerisque enim id ligula dignissim venenatis. Curabitur vulputate mi at neque auctor tristique. Nullam in est tincidunt, sagittis velit ac, efficitur ex. In dapibus mi vel lectus varius, a dapibus quam dignissim. Donec laoreet ex vel tellus sagittis feugiat. Sed sit amet bibendum enim. Fusce mattis eros sed efficitur aliquam. Curabitur viverra lectus eu tristique tincidunt. Vestibulum ultrices justo a ex accumsan pharetra. Integer non sem id mauris finibus dignissim in nec urna. Aliquam et cursus eros. Nullam aliquam urna ut diam elementum, nec lobortis nulla consequat. Sed nec est ultricies, pharetra dolor at, mattis enim.</p>
-        </div>
-    </div>
-    <div>
-        <p class="title-text">20230516_BC_Bitcoin_ Year-To-Date ROI.json</p>
-        <h3 class="subtitle-text">16/05/2023 - Channel Name</h3>
-        <div class="text-container">
+        <button class="hide-button" onclick="toggleSection()">Hide Section</button>
+        <div id="section-to-toggle" class="text-container">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus urna a pretium tincidunt. Fusce scelerisque enim id ligula dignissim venenatis. Curabitur vulputate mi at neque auctor tristique. Nullam in est tincidunt, sagittis velit ac, efficitur ex. In dapibus mi vel lectus varius, a dapibus quam dignissim. Donec laoreet ex vel tellus sagittis feugiat. Sed sit amet bibendum enim. Fusce mattis eros sed efficitur aliquam. Curabitur viverra lectus eu tristique tincidunt. Vestibulum ultrices justo a ex accumsan pharetra. Integer non sem id mauris finibus dignissim in nec urna. Aliquam et cursus eros. Nullam aliquam urna ut diam elementum, nec lobortis nulla consequat. Sed nec est ultricies, pharetra dolor at, mattis enim.</p>
         </div>
     </div>
