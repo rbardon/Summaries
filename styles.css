@@ -27,3 +27,16 @@
 .navbar-list li a:hover {
   color: #666;
 }
+
+.chart-container {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
